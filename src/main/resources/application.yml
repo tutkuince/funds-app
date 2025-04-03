@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: funds-app
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/funds_app
+    username: root
+    password: s3cr3t
+    hikari:
+      auto-commit: false
+
+  data:
+    jdbc:
+      dialect: postgresql
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        connection:
+          provider_disables_autocommit: true
