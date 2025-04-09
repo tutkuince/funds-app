@@ -3,6 +3,7 @@ package com.incetutku.fundsapp.model.entity
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
+import jakarta.persistence.OneToMany
 import jakarta.persistence.Table
 import org.hibernate.annotations.CreationTimestamp
 import org.hibernate.annotations.UpdateTimestamp
@@ -28,4 +29,6 @@ class User {
     @UpdateTimestamp
     val updatedAt: Date? = null
 
+    @OneToMany(mappedBy = "user")
+    var accounts :Set<Account>? = null
 }
