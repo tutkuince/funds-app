@@ -29,6 +29,6 @@ class User {
     @UpdateTimestamp
     val updatedAt: Date? = null
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(targetEntity = Account::class)
     var accounts :Set<Account>? = null
 }
