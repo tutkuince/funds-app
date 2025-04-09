@@ -1,4 +1,4 @@
-package com.incetutku.fundsapp.dto
+package com.incetutku.fundsapp.model.dto
 
 import jakarta.validation.constraints.Max
 import jakarta.validation.constraints.Min
